@@ -1,0 +1,22 @@
+{
+  "name": "webkanji",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "gen:strokes": "node scripts/gen-stroke-data.mjs",
+    "dev": "npm run gen:strokes && vite",
+    "build": "npm run gen:strokes && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "hanzi-writer": "^3.7.3",
+    "kanji-writer-data-jp": "^0.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  }
+}
